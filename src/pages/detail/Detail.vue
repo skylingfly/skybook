@@ -90,7 +90,7 @@ export default {
       this.comments = res.list
     },
     async addcomment () {
-      if (!this.comment.trim()) {
+      if (!this.comment) {
         showModal('', '评论不能为空!')
         return
       }
