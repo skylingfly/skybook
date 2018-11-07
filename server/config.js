@@ -1,15 +1,26 @@
 const CONF = {
+
+    // 其他配置 ...
+    // serverHost: 'localhost',
+    // tunnelServerUrl: '',
+    // tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
+    // // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
+    qcloudAppId: '1257848697',
+    qcloudSecretId: 'AKIDHPK2XqnpV2MQEme6sOfgT2LPDl353Ndd',
+    qcloudSecretKey: 'sVszqRmsjKgmdv0rY1FF1YqujKhpiNnz',
+    // wxMessageToken: 'weixinmsgtoken',
+    // networkTimeout: 30000,
     port: '5757',
     rootPathname: '',
 
     // 微信小程序 App ID
-    appId: '',
+    appId: 'wx7e7b65caa98fafda',
 
     // 微信小程序 App Secret
-    appSecret: '',
+    appSecret: '522626d4d6611cd5f1a8713b693be26c',
 
     // 是否使用腾讯云代理登录小程序
-    useQcloudLogin: true,
+    useQcloudLogin: false,
 
     /**
      * MySQL 配置，用来存储 session 和用户信息

@@ -1,31 +1,59 @@
-<script>
-export default {
-  created () {
-    // 调用API从本地缓存中获取数据
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
 
-    console.log('app created and cache logs by setStorageSync')
-  }
+
+<script>
+import { getRequest } from './utils/tool'  //eslint-disable-line
+import config from './utils/config' //eslint-disable-line
+export default {
+  async created () {
+
+  },
+  onLaunch (opt) {
+
+  },
+  data () {
+    return {
+      showModal: true
+    }
+  },
+  methods: {
+  },
+  mpType: 'app'
 }
 </script>
 
-<style>
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-}
-/* this rule will be remove */
-* {
-  transition: width 2s;
-  -moz-transition: width 2s;
-  -webkit-transition: width 2s;
-  -o-transition: width 2s;
-}
+<style >
+  .text-primary{
+    color:#EA5A49;
+  }
+  .footer{
+    text-align: center;
+    color: #959595;
+    font-size: 12px;
+    margin: 6px 0;
+  }
+  .page-title{
+    padding-left:20px;
+    background-color: #eee; 
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .right{
+    float: right;
+  }
+  .btn{
+    color: white;
+    background-color: #EA5A49;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px; 
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .btn:active{
+    background-color: #fa5a49;
+  }
 </style>
+

@@ -8,10 +8,10 @@
 		"newFeature": true
 	},
 	"miniprogramRoot": "dist/",
-	"qcloundRoot": "./server/",
+	"qcloudRoot": "./server/",
 	"compileType": "miniprogram",
 	"appid": "wx7e7b65caa98fafda",
-	"projectname": "my-mpvue",
+	"projectname": "SkyBook",
 	"condition": {
 		"search": {
 			"current": -1,
