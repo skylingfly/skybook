@@ -5,7 +5,8 @@
       <div class="comment" v-if="showComment">
         <textarea 
           v-model='comment'
-          auto-focus='true'
+          cursor-spacing=20
+          show-confirm-bar=false
           class="textarea"
           placeholder="请输入评论"
           placeholder-style='color:#888;font-size:12px'
@@ -89,6 +90,10 @@ export default {
       this.comments = res.list
     },
     async addcomment () {
+      if (!this.comment.trim()) {
+        showModal('', '评论不能为空!')
+        return
+      }
       const data = {
         openid: this.userinfo.openId,
         bookid: this.bookid,
@@ -96,7 +101,6 @@ export default {
         phone: this.phone,
         location: this.location
       }
-      console.log(data)
       const res = await postRequest('/weapp/addcomment', data)
       if (res.msg === 'success') {
         showModal('成功', '评论添加成功!')
