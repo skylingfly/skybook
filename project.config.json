@@ -10,7 +10,7 @@
 	"miniprogramRoot": "dist/",
 	"qcloudRoot": "./server/",
 	"compileType": "miniprogram",
-	"appid": "wx7e7b65caa98fafda",
+	"appid": "xxxx",
 	"projectname": "SkyBook",
 	"condition": {
 		"search": {
